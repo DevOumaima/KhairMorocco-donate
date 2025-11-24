@@ -105,7 +105,7 @@ header {
 }
 
 .Home {
-    font-family: "Playwrite NG Modern", serif;
+    font-family: sans-serif;
     font-weight: 700;
     color: white;
     max-width: 90vw; 
@@ -153,7 +153,7 @@ header {
 }
 
 .learn {
-    font-family: "Playwrite NG Modern", serif;
+    font-family: sans-serif;
     font-weight: 700;
     text-align: center;
     font-size: clamp(1.5rem, 4vw, 2rem);
@@ -343,4 +343,5 @@ footer {
 
     }
 }
+
 
