@@ -199,6 +199,21 @@ header {
     flex-direction: column;
     gap: 20px;
     max-width: 90vw;
+    text-align: center;
+}
+
+#Donate_Now {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.forum {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+    justify-content: center;
+    align-items: center; 
+    padding: 0 20px;
 }
 
 .registre {
@@ -214,10 +229,10 @@ header {
     width: 160px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    display: block; 
+    margin: 0 auto; 
     transition: 0.3s;
 }
-
 .Donate-btn:hover {
     color: rgb(100, 204, 204);
     background: #fff;
@@ -225,9 +240,10 @@ header {
 }
 
 .forum img {
-    max-width: 100%; 
+    max-width: 80%; 
     height: auto;
 }
+    
 
 footer {
     height: auto; 
@@ -330,3 +346,4 @@ footer {
     header {
         height: 60px;
         padding: 0 15px;
+
