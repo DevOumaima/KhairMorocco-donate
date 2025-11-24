@@ -1,305 +1,332 @@
-
-* {  
+* {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    }
+}
 
-    html {
-        font-family: sans-serif;
-        line-height: 1.15;
-        -webkit-text-size-adjust: 100%;
-        -ms-text-size-adjust: 100%;
-        -ms-overflow-style: scrollbar;
-        -webkit-tap-highlight-color: transparent;
-    }
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: transparent;
+}
 
 header {
-        display: flex;
-        justify-content: space-around;
-        flex-direction: row;
-        align-items: center;
-        z-index: 999;
-        top: 0;
-        left: 0;
-        right: 0;
-        position: fixed;
-         height: 70px;
-        width: 100%;
-       /* background: #f0f0f0;*/
-        background:#0f3d3d;
-        backdrop-filter: blur(5px); 
-       
-    }
- .logocon {
-    cursor: pointer;
- }
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    width: 100%;
+    background: #0f3d3d;
+    backdrop-filter: blur(5px);
+    padding: 0 20px; 
+}
 
-    .first {
-        width: 100%;
-        min-height: 100vh;
-        background: url('survey-over-81-of-moroccans-have-no-confidence-in-education-reform-800x520.jpg');
-        padding-top: 90px;
-        background-size: cover;
-       background-repeat: no-repeat;
-       background-position: center;
-       background-attachment: fixed;
-       z-index: 1;
-            margin-top: 50px;
-            display: flex;
-            flex-direction: row-reverse;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-        }
-        
-        .first::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(2deg, rgba(18, 230, 219, 0.7), transparent);; /* Purple gradient */
-            z-index: 1;
-          }
-        
-          
-        .learn {
-            font-family: "Playwrite NG Modern", serif;
-            font-optical-sizing: auto;
-            font-weight: 700;
-              text-align: center;
-             display: flex;
-             align-items: center;
-             justify-content: center;
-             font-size: 2rem;
-            margin-top: 50px;
-            margin-bottom: 50px;
-            color: #0f3d3d;
+.logocon img {
+    height: 50px; 
+    width: auto;
+}
 
-        }
-        .row {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            gap: 20px; 
-            justify-content: center;
-        }
-        .arrow {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-        }
+.navigation {
+    display: flex;
+    gap: 20px;
+}
 
-
-    .Home {
-        font-family: "Playwrite NG Modern", serif;
-        font-optical-sizing: auto;
-        font-weight: 700;
-        color: rgb(252, 247, 247);
-       max-width: 600;
-       position: relative;
-       z-index: 2;
-       color: white; 
-      display: flex;
-      justify-content: flex-start;
-        flex-direction: column;
-    }
-    .Home h1{
-        text-align: left;
-        display: flex;
-        align-items: center;
-        font-size: 3rem;
-        color: rgb(248, 250, 250);
-        max-width: 600px;
-    }
-    .Home p{
-        text-align: left;
-        font-weight: 300;
-         margin-top: 15px;
-         max-width: 600px;
-         color: rgb(253, 247, 247);
-     }
-     .Home button{
-        margin-top: 50px;
-         display: inline-block;
-        text-decoration: none;
-        background: #141212;
-        background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(5px); 
-        font-size: 1.1em;
-        font-weight: 600;
-        padding: 0.9375em;
-        letter-spacing: 1px;
-        transition: 0.7s ease;
-        width: 170px;
-     }
-     .Home button:hover { 
-        cursor: pointer;
-        border: 1px #fff;
-        color: #0f3d3d;
-        background-color:rgb(249, 253, 253);
-        transform: scale(1,1);  /* this thecknique for macke the btn grow whil hover */
-     
-    }
-
-    .navigation a{ 
+.navigation a {
     color: #f8f9fc;
     text-decoration: none;
     font-size: 1.1em;
     font-weight: 500;
-    padding-left: 30px;
-    }
-    .navigation a:hover{ 
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+.navigation a:hover {
     color: #f3f1f7;
-    
-    }
-    
-   
+}
 
-    @media screen and (max-width: 900px){ 
-        body {
-            width: 100vw;
-        }
-        header {
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 60px;
-            width: 100%;
-            position: fixed;
-            
-        }
-        .alighn {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 0; 
-            
-        }
+.mobile-nav-toggle {
+    display: none; 
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
 
-    
+.mobile-nav-toggle span {
+    width: 25px;
+    height: 3px;
+    background: #f8f9fc;
+    transition: 0.3s;
+}
+
+
+.mobile-nav-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.mobile-nav-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-nav-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+.first {
+    width: 100%;
+    min-height: 100vh;
+    background: url('survey-over-81-of-moroccans-have-no-confidence-in-education-reform-800x520.jpg') no-repeat center center / cover;
+    padding-top: 90px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.first::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(2deg, rgba(18, 230, 219, 0.7), transparent);
+    z-index: 1;
+}
+
+.Home {
+    font-family: "Playwrite NG Modern", serif;
+    font-weight: 700;
+    color: white;
+    max-width: 90vw; 
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 20px;
+}
+
+.Home h1 {
+    font-size: clamp(2rem, 5vw, 3rem); 
+    margin-bottom: 15px;
+}
+
+.Home p {
+    font-weight: 300;
+    margin-top: 15px;
+    max-width: 90vw;
+    font-size: clamp(1rem, 3vw, 1.2rem);
+}
+
+.Home button {
+    margin-top: 50px;
+    display: inline-block;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 0.9375em;
+    letter-spacing: 1px;
+    transition: 0.7s ease;
+    width: 170px;
+    border: none;
+}
+
+.Home button:hover {
+    cursor: pointer;
+    border: 1px solid #fff;
+    color: #0f3d3d;
+    background-color: rgb(249, 253, 253);
+    transform: scale(1.05);
+}
+
+.learn {
+    font-family: "Playwrite NG Modern", serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    margin: 50px 0;
+    color: #0f3d3d;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.card {
+    width: 100%; 
+    max-width: 410px; 
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.arrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.forum {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.step1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 90vw;
+}
+
+.registre {
+    width: 100%; 
+    font-size: clamp(1rem, 3vw, 1.2rem);
+}
+
+.Donate-btn {
+    padding: 10px;
+    color: #0f3d3d;
+    background: #fff;
+    border: 1px solid;
+    width: 160px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.Donate-btn:hover {
+    color: rgb(100, 204, 204);
+    background: #fff;
+    border: 1px solid #0f3d3d;
+}
+
+.forum img {
+    max-width: 100%; 
+    height: auto;
+}
+
+footer {
+    height: auto; 
+    background: #0f3d3d;
+    color: #fff;
+    padding: 30px 20px;
+}
+
+.alighn-all {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding-bottom: 50px;
+}
+
+.Don img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+.make {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.make p {
+    text-decoration: underline;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+.make h4 {
+    text-transform: uppercase;
+    font-family: "Playwrite NG Modern", serif;
+    font-weight: 700;
+    color: rgb(250, 253, 253);
+    margin-bottom: 10px;
+    font-size: clamp(1rem, 3vw, 1.2rem);
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.click {
+    padding: 10px 60px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.click:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.vertical-line {
+    width: 1px;
+    height: auto;
+    background-color: #ffff;
+    margin: 20px 0;
+}
+
+.footer-title {
+    font-size: 1em;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .Home h1 {
+        font-size: 2.5rem;
     }
-   
+    .row {
+        gap: 15px;
+    }
+    .card {
+        max-width: 45%; 
+    }
     .forum {
-        display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        gap: 20px; 
-        justify-content: center;
-    }
-    .call {
-        font-family: "Playwrite NG Modern", serif;
-        font-optical-sizing: auto;
-        font-weight: 700;
-        font-style: normal;
-          text-align: center;
-         display: flex;
-         align-items: center;
-         justify-content: center;
-    }
-    #Donate_Now {
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-    .step1 {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        gap: 20px; 
-    }
-    .registre {
-        
-        width: 550px;
-    }
-
-    .Donate-btn {
-        padding: 10px;
-        color:  #0f3d3d;
-        background: #fff;
-        border: 1px solid;
-        width: 160px;
-        text-align: center;
-    }
-    .Donate-btn:hover {
-        color:rgb(100, 204, 204);
-        background: #fff;
-        border: 1px solid #0f3d3d;
-    }
-    footer {
-        height: 90vh;
-        background: #0f3d3d;
-        color: #fff;
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-    .Don {
-        width: 200px;
-        height: 45px;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 30px;
-    }
-    .make {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        
-    }
-    .make p {
-        text-decoration: underline;
-        cursor: pointer;
-    }
-    .make h4 {
-        text-transform: uppercase;
-        font-family: "Playwrite NG Modern", serif;
-            font-optical-sizing: auto;
-            font-weight: 700;
-            color:rgb(250, 253, 253);
-            margin-bottom: 10px;
     }
     .alighn-all {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        gap: 20px; 
-        padding-bottom: 50px;
+        justify-content: space-between;
     }
-    
-    .btns {
-        margin-right:  50px;
-        margin-top:  50px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    .click {
-        padding: 10px 60px;
-        color: #fff;
-        background: #141212;
-        background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(5px); 
-        margin-bottom: 10px;
-    }
-    .vertical-line {
-        width: 0.2px;
-        height: auto;
-        background-color: #ffff;
-        margin-top: 20px;
-      }
-      .footer-title {
-        font-size: 1em;
-        font-weight: 500;
-        
-    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: 60px;
+        padding: 0 15px;
