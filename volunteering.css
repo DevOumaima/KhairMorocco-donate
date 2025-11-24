@@ -303,12 +303,7 @@ footer {
     background: rgba(255, 255, 255, 0.2);
 }
 
-.vertical-line {
-    width: 1px;
-    height: auto;
-    background-color: #ffff;
-    margin: 20px 0;
-}
+
 
 .footer-title {
     font-size: 1em;
@@ -343,6 +338,7 @@ footer {
 
     }
 }
+
 
 
 
