@@ -260,12 +260,6 @@ footer {
     padding-bottom: 50px;
 }
 
-.Don img {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-}
-
 .make {
     display: flex;
     flex-direction: column;
@@ -347,3 +341,5 @@ footer {
         height: 60px;
         padding: 0 15px;
 
+    }
+}
