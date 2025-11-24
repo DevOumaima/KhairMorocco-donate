@@ -104,7 +104,7 @@ header {
 }
 
 .Home {
-    font-family: "Playwrite NG Modern", serif;
+    font-family: "Roboto", serif;
     font-weight: 700;
     color: white;
     max-width: 90vw; 
@@ -337,6 +337,7 @@ footer {
 
     }
 }
+
 
 
 
