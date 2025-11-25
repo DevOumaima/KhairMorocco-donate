@@ -1,7 +1,7 @@
 ## Khair Morocco Donation Website
 this website designed to promote unity, donations, and volunteering for students in Morocco. 
 Built with HTML, and CSS, it serves as a platform for a student-led initiative to support underprivileged children through clothing donations and community outreach. 
-The site emphasizes accessibility, mobile-friendliness, and a clean, modern design inspired by Moroccan themes.
+
 
 ## Featurs 
 - User-Friendly Interface with clear sections.
