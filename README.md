@@ -16,7 +16,6 @@ Built with HTML, and CSS, it serves as a platform for a student-led initiative t
 - Images: Local assets (e.g., logos, backgrounds).
 
 ## Project Licence
-This project is open-source under the MIT License. Feel free to use and modify it for non-commercial purposes.
-
+This project is open-source under the MIT License. See the LICENSE file for more details.
 
 
