@@ -1,9 +1,9 @@
-## Khair Morocco Donation Website
+## Khair Morocco donation website
 this website designed to promote unity, donations, and volunteering for students in Morocco. 
 Built with HTML, and CSS, it serves as a platform for a student-led initiative to support underprivileged children through clothing donations and community outreach. 
 
 
-## Featurs 
+## Features 
 - User-Friendly Interface with clear sections.
 - Responsive Design: Adaptive layout for mobile, tablet, and desktop; elements like hero, cards, and footer adjust seamlessly without horizontal scrolling.
 - Easy-to-Fill Registration Form: Simple donation form with clear instructions.
@@ -15,7 +15,7 @@ Built with HTML, and CSS, it serves as a platform for a student-led initiative t
 - Fonts: Google Fonts.
 - Images: Local assets (e.g., logos, backgrounds).
 
-## Project Licence
+## Project License 
 This project is open-source under the MIT License. See the LICENSE file for more details.
 
 
